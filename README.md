@@ -19,7 +19,7 @@
 <img width="652" alt="屏幕截图 2023-12-14 141757" src="https://github.com/Jonas9172/Notes/assets/105164575/8ca1a69d-2f6a-407b-8a97-d80f74ee734f">
 
 9. list.sort()改变list，无返回值。 倒序排列：list.sort(reverse=True)；对第二个关键字排序：list.sort(key=lambda x:x[1])
-10.  sorted(list)不改变list，有返回值  注意：不能对string格式的数字排序; list.reverse()将列表倒过来，无返回值。
+10.  sorted(list)不改变list，有返回值  注意：不能对string格式的数字排序; list.reverse()将列表倒过来，无返回值; a = sorted(list(set(a)),key=a.index)把字符串或列表中的重复元素删除但是不打乱原来的顺序
 11.
 <img width="238" alt="屏幕截图 2023-12-14 145531" src="https://github.com/Jonas9172/Notes/assets/105164575/2bb61786-4daf-4f3a-96da-b51f63ced905"> <img width="323" alt="屏幕截图 2023-12-14 145703" src="https://github.com/Jonas9172/Notes/assets/105164575/7570d930-c01d-43b2-896b-2910e82c6053">
 
@@ -50,7 +50,7 @@
 24. ord() -- 返回对应的 ASCII 数值; chr() -- 输入一个ASCII值返回对应的符号； "A" < ""两个字符串中第一个字符的ASCII值越大，字符串越大; 0-9:48-57, A-Z:65-90, a-z:97-122
 25. continue跳出本次循环；break跳出整个for循环
 26. isinstance(element, int) 判断element是否是某个类型
-27. 判断字符串里是否全是数字--str.isdigit(); 判断字符串里是否全是字母--str.isalpha(); 判断字符串里是否全是数字或字母--strstr.isalnum(); 判断str中所有字母都是大写--isupper(); 判断str中所有字母都是小写--islower()
+27. 判断字符串里是否全是数字--str.isdigit(); 判断字符串里是否全是字母--str.isalpha(); 判断字符串里是否全是数字或字母--strstr.isalnum(); 判断str中所有字母都是大写--isupper(); 判断str中所有字母都是小写--islower(); lower()和upper()可以将字符串中所有的字母变成大小写
 28. 将list中的string转换为int格式：a = [int(num) for num in a]  或者  a = list(map(int, a))
 29. 二维列表的创建 --- a = [[0 for col in range(m)] for row in range(n)]
 30. 动态规划---将一个问题拆分为很多小问题，也就是说一个大的解决方案需要多步小步骤实现
@@ -61,3 +61,4 @@
 35. list可以直接用==比较
 36. 素数（质数）一定是奇数加偶数
 37. 最大回文子序列要分成单中心和双中心
+38. 等差数列和公式 Sn=n (a1+an)/2=na1+n (n-1)/2 d； 等比数列求和公式 q≠1时 Sn=a1 (1-q^n)/ (1-q)= (a1-anq)/ (1-q) q=1时Sn=na1 (a1为首项,an为第n项,d为公差,q 为等比)
