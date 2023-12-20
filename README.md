@@ -19,25 +19,45 @@
 <img width="652" alt="屏幕截图 2023-12-14 141757" src="https://github.com/Jonas9172/Notes/assets/105164575/8ca1a69d-2f6a-407b-8a97-d80f74ee734f">
 
 9. list.sort()改变list，无返回值。 倒序排列：list.sort(reverse=True)；对第二个关键字排序：list.sort(key=lambda x:x[1])
-10.  sorted(list)不改变list，有返回值  注意：不能对string格式的数字排序
+10.  sorted(list)不改变list，有返回值  注意：不能对string格式的数字排序; list.reverse()将列表倒过来，无返回值。
 11.
 <img width="238" alt="屏幕截图 2023-12-14 145531" src="https://github.com/Jonas9172/Notes/assets/105164575/2bb61786-4daf-4f3a-96da-b51f63ced905"> <img width="323" alt="屏幕截图 2023-12-14 145703" src="https://github.com/Jonas9172/Notes/assets/105164575/7570d930-c01d-43b2-896b-2910e82c6053">
 
-12. 字符串可以使用索引，例如 str[-1]； 字符串长度：len(str)； 字符串切片：str[:], str[0:3], str[3:-3], str[-3:]， str[首:尾:步长]； 取字符串中每一个字符---for each in str； 判断字符是否在字符串中---if each in str; 字符和字符串可以使用加法---each + str
+12. 字符串可以使用索引，例如 str[-1]； 字符串长度：len(str)； 字符串切片：str[:], str[0:3], str[3:-3], str[-3:]， str[首:尾:步长]； 取字符串中每一个字符---for each in str； 判断字符是否在字符串中---if each in str; 得到字符在字符串中的索引位置---str2.find("str1"); 字符和字符串可以使用加法---each + str; 列表也可以使用切片操作，例如可以使用切片对string每个偶数位进行排序---string[::2] = sorted(string[::2])
     <img width="369" alt="屏幕截图 2023-12-15 121645" src="https://github.com/Jonas9172/Notes/assets/105164575/e2b8834e-d61c-4d9a-9adb-9162a80489a9">
 
 14. 用ljust(8,"0")在字符串左侧对齐的情况下对右侧进行补位；rjust()反之
-15. int("str", base=16) 把str视为16进制并转换为10进制的整数。 转为二进制：bin()[2:]；转为八进制：oct()；转为十六进制：hex()
-16. 删除的四种操作：del listname[start : end]； listname.pop(index)； remove(值)--只能删除list中的第一个； clear()--清空list
-17. print(str, end=" ") 让下一次的print内容和此次以" "相连
-18. 暴力求质因数（用试除法求一个数所有为质数的因子），时间复杂度为O(n)： <img width="192" alt="屏幕截图 2023-12-15 105253" src="https://github.com/Jonas9172/Notes/assets/105164575/978410a8-8f81-4e38-981b-bbfef8963add">
+15. int("str", base=16) 把str视为16进制并转换为10进制的整数。 十进制转为二进制：bin()[2:]；转为八进制：oct()；转为十六进制：hex()
+16. 删除的四种操作：del listname[start : end]； listname.pop(index)； remove(值)--只能删除list中的第一个； clear()--清空list；  字符串的替换和删除操作: str.replace("old","new",times), 不改变原值，return结果
+17. print(str, end=" ") 让下一次的print内容和此次以" "相连; print(','.join(string))---将string中的每个字符用,隔开，也可以用于list
+18.  print中的%用法
 
-19. 优化后：<img width="231" alt="屏幕截图 2023-12-15 111953" src="https://github.com/Jonas9172/Notes/assets/105164575/6e4d2356-746d-42d2-b017-3a8233407c0d">
+<img width="366" alt="屏幕截图 2023-12-16 145045" src="https://github.com/Jonas9172/Notes/assets/105164575/f854fe03-cb58-4dba-94c3-27372f0c02c9"><img width="464" alt="屏幕截图 2023-12-16 145056" src="https://github.com/Jonas9172/Notes/assets/105164575/39e04b23-2ef1-45e6-bd05-b83105da311a">
 
-20. 浮点数：float()
-21. 取整：<img width="473" alt="屏幕截图 2023-12-15 113603" src="https://github.com/Jonas9172/Notes/assets/105164575/464f111d-4825-4d79-82e4-914bb40af856">
-22. ord() -- 返回对应的 ASCII 数值
-23. continue跳出本次循环；break跳出整个for循环
-24. isinstance(element, int) 判断element是否是某个类型
-25. 判断字符串里是否全是数字--str.isdigit(); 判断字符串里是否全是字母--str.isalpha(); 判断字符串里是否全是数字或字母--strstr.isalnum()
+19. print中的format()
+<img width="402" alt="屏幕截图 2023-12-16 144827" src="https://github.com/Jonas9172/Notes/assets/105164575/ef51455d-6179-423b-9dc1-f9ee38f79881">
 
+20. 暴力求质因数（用试除法求一个数所有为质数的因子），时间复杂度为O(n)：
+<img width="192" alt="屏幕截图 2023-12-15 105253" src="https://github.com/Jonas9172/Notes/assets/105164575/978410a8-8f81-4e38-981b-bbfef8963add">
+
+21. 优化后：
+<img width="231" alt="屏幕截图 2023-12-15 111953" src="https://github.com/Jonas9172/Notes/assets/105164575/6e4d2356-746d-42d2-b017-3a8233407c0d">
+
+22. 浮点数：float()
+23. 取整：
+<img width="473" alt="屏幕截图 2023-12-15 113603" src="https://github.com/Jonas9172/Notes/assets/105164575/464f111d-4825-4d79-82e4-914bb40af856">
+
+24. ord() -- 返回对应的 ASCII 数值; chr() -- 输入一个ASCII值返回对应的符号； "A" < ""两个字符串中第一个字符的ASCII值越大，字符串越大; 0-9:48-57, A-Z:65-90, a-z:97-122
+25. continue跳出本次循环；break跳出整个for循环
+26. isinstance(element, int) 判断element是否是某个类型
+27. 判断字符串里是否全是数字--str.isdigit(); 判断字符串里是否全是字母--str.isalpha(); 判断字符串里是否全是数字或字母--strstr.isalnum(); 判断str中所有字母都是大写--isupper(); 判断str中所有字母都是小写--islower()
+28. 将list中的string转换为int格式：a = [int(num) for num in a]  或者  a = list(map(int, a))
+29. 二维列表的创建 --- a = [[0 for col in range(m)] for row in range(n)]
+30. 动态规划---将一个问题拆分为很多小问题，也就是说一个大的解决方案需要多步小步骤实现
+31. sum()可以对列表，数组，元组使用
+32. zip(a,b)是将两个相同大小的列表合成一个充满元组的列表，例如：zip([1,2,3],[3,4,5])返回[(1,3),(2,4),(3,5)]
+33. 二分搜索---bisect.bisect_left(list, num)在升序数列中如果插入一个num，那么num应该插在哪呢，该函数返回此位置的索引
+34. enumerate()返回列表元组或字符串中元素的下标和本体
+35. list可以直接用==比较
+36. 素数（质数）一定是奇数加偶数
+37. 最大回文子序列要分成单中心和双中心
