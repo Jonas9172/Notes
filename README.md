@@ -28,7 +28,7 @@
 
 14. 用ljust(8,"0")在字符串左侧对齐的情况下对右侧进行补位；rjust()反之
 15. int("str", base=16) 把str视为16进制并转换为10进制的整数。 十进制转为二进制：bin()[2:]；转为八进制：oct()；转为十六进制：hex()
-16. 删除的四种操作：del listname[start : end]； listname.pop(index)； remove(值)--只能删除list中的第一个； clear()--清空list；  字符串的替换和删除操作: str.replace("old","new",times), 不改变原值，return结果
+16. 删除的四种操作：del listname[start : end]； listname.pop(index)--默认最后一个； remove(值)--只能删除list中的第一个； clear()--清空list；  字符串的替换和删除操作: str.replace("old","new",times), 不改变原值，return结果
 17. print(str, end=" ") 让下一次的print内容和此次以" "相连; print(','.join(string))---将string中的每个字符用,隔开，也可以用于list
 18.  print中的%用法
 
@@ -62,3 +62,6 @@
 36. 素数（质数）一定是奇数加偶数
 37. 最大回文子序列要分成单中心和双中心
 38. 等差数列和公式 Sn=n (a1+an)/2=na1+n (n-1)/2 d； 等比数列求和公式 q≠1时 Sn=a1 (1-q^n)/ (1-q)= (a1-anq)/ (1-q) q=1时Sn=na1 (a1为首项,an为第n项,d为公差,q 为等比)
+39. 元组元素不能被修改; 如果想把元组(1, 2)里的空格删去再打印需要--print('(%d,%d)'%i)
+40. list.index() 函数用于从列表中找出某个值第一个匹配项的索引位置。
+41. eval() 函数用来执行一个字符串表达式，并返回表达式的值。例如：print(eval("2 + 3 * 4"))  # 输出: 14
