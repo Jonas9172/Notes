@@ -23,7 +23,7 @@
 11.
 <img width="238" alt="屏幕截图 2023-12-14 145531" src="https://github.com/Jonas9172/Notes/assets/105164575/2bb61786-4daf-4f3a-96da-b51f63ced905"> <img width="323" alt="屏幕截图 2023-12-14 145703" src="https://github.com/Jonas9172/Notes/assets/105164575/7570d930-c01d-43b2-896b-2910e82c6053">
 
-12. 字符串可以使用索引，例如 str[-1]； 字符串长度：len(str)； 字符串切片：str[:], str[0:3], str[3:-3], str[-3:]， str[首:尾:步长]； 取字符串中每一个字符---for each in str； 判断字符是否在字符串中---if each in str; 得到字符在字符串中的索引位置---str2.find("str1"); 字符和字符串可以使用加法---each + str; 列表也可以使用切片操作，例如可以使用切片对string每个偶数位进行排序---string[::2] = sorted(string[::2])
+12. 字符串可以使用索引，例如 str[-1]； 字符串长度：len(str)； 字符串切片：str[:], str[0:3], str[3:-3], str[-3:]， str[首:尾:步长]； 取字符串中每一个字符---for each in str； 判断字符是否在字符串中---if each in str; 得到字符在字符串中第一次出现的索引位置---str2.find("str1"); 字符和字符串可以使用加法---each + str; 列表也可以使用切片操作，例如可以使用切片对string每个偶数位进行排序---string[::2] = sorted(string[::2])
     <img width="369" alt="屏幕截图 2023-12-15 121645" src="https://github.com/Jonas9172/Notes/assets/105164575/e2b8834e-d61c-4d9a-9adb-9162a80489a9">
 
 14. 用ljust(8,"0")在字符串左侧对齐的情况下对右侧进行补位；rjust()反之
