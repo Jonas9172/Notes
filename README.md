@@ -69,3 +69,16 @@
 43. n = [1,2,3,4]
     a = n
     a.pop(2)  #n=[1,2,4] 因为列表是可变元素，所以a的指针指向n，而不是创建一个相同列表。如果不想改变n的值，可以使用a = n.copy()或a = n[:]
+
+44. 正则表达式表达模式
+   
+    <img width="596" alt="屏幕截图 2023-12-26 111448" src="https://github.com/Jonas9172/Notes/assets/105164575/347ca67d-eab4-4c09-b08e-97683ea6d5df">
+<img width="429" alt="屏幕截图 2023-12-26 110805" src="https://github.com/Jonas9172/Notes/assets/105164575/000e7835-4a66-46c9-9ea3-40499df35867">
+
+   re.findall(pattern, string)---在字符串中找到正则表达式所匹配的所有子串
+
+45. 寻找两个字符串中最长公共子串:
+
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/59d3f770-b440-4127-bfd7-ffaab90b9703)
+    
+
