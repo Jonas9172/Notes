@@ -28,7 +28,7 @@
 
 14. 用ljust(8,"0")在字符串左侧对齐的情况下对右侧进行补位；rjust()反之
 15. int("str", base=16) 把str视为16进制并转换为10进制的整数。 十进制转为二进制：bin()[2:]；转为八进制：oct()；转为十六进制：hex()
-16. 删除的四种操作：del listname[start : end]； listname.pop(index)--默认最后一个, 返回删除的值； remove(值)--只能删除list中的第一个； clear()--清空list；  字符串的替换和删除操作: str.replace("old","new",times), 不改变原值，return结果
+16. 删除的四种操作：del listname[start : end]； listname.pop(index)--默认最后一个, 改变原值并返回删除的值； remove(值)--只能删除list中的第一个； clear()--清空list；  字符串的替换和删除操作: str.replace("old","new",times), 不改变原值，return结果
 17. print(str, end=" ") 让下一次的print内容和此次以" "相连; print(','.join(string))---将string中的每个字符用,隔开，也可以用于list
 18.  print中的%用法
 
@@ -80,5 +80,11 @@
 45. 寻找两个字符串中最长公共子串:
 
     ![图片](https://github.com/Jonas9172/Notes/assets/105164575/59d3f770-b440-4127-bfd7-ffaab90b9703)
+
+46. 排列组合公式：
     
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/a1e13d6e-99f7-4531-8fc0-f0f729c8e17f)
+
+47. 取一位小数： round(2.333,1)
+48. str1.startwith('str2') 和str1.endwith('str2') 是用来判断字符串str1是否以str2开头或结尾
 
