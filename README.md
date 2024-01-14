@@ -18,7 +18,7 @@
 8.
 <img width="652" alt="屏幕截图 2023-12-14 141757" src="https://github.com/Jonas9172/Notes/assets/105164575/8ca1a69d-2f6a-407b-8a97-d80f74ee734f">
 
-9. list.sort()改变list，无返回值。 倒序排列：list.sort(reverse=True)；对第二个关键字排序：list.sort(key=lambda x:x[1])
+9. list.sort()改变list，无返回值。 倒序排列：list.sort(reverse=True)；对第二个关键字排序：list.sort(key=lambda x:x[1]); 多级排序：list.sort(key=lambda x:(x[1],x[0]))
 10.  sorted(list)不改变list，有返回值  注意：不能对string格式的数字排序; list.reverse()将列表倒过来，无返回值; a = sorted(list(set(a)),key=a.index)把字符串或列表中的重复元素删除但是不打乱原来的顺序
 11.
 <img width="238" alt="屏幕截图 2023-12-14 145531" src="https://github.com/Jonas9172/Notes/assets/105164575/2bb61786-4daf-4f3a-96da-b51f63ced905"> <img width="323" alt="屏幕截图 2023-12-14 145703" src="https://github.com/Jonas9172/Notes/assets/105164575/7570d930-c01d-43b2-896b-2910e82c6053">
