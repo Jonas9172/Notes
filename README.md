@@ -72,8 +72,12 @@
 43. n = [1,2,3,4]
     a = n
     a.pop(2)  #n=[1,2,4] 因为列表是可变元素，所以a的指针指向n，而不是创建一个相同列表。如果不想改变n的值，可以使用a = n.copy()或a = n[:]
+    但是，如果是n = [[1,2],[2,3]]这样的多维列表，还要使用copy.deepcopy(n)
+    
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/61bc7f73-8b6a-44e9-b010-24e438240f11)
 
-44. 正则表达式表达模式
+
+45. 正则表达式表达模式
    
     <img width="596" alt="屏幕截图 2023-12-26 111448" src="https://github.com/Jonas9172/Notes/assets/105164575/347ca67d-eab4-4c09-b08e-97683ea6d5df">
 <img width="429" alt="屏幕截图 2023-12-26 110805" src="https://github.com/Jonas9172/Notes/assets/105164575/000e7835-4a66-46c9-9ea3-40499df35867">
