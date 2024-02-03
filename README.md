@@ -110,5 +110,19 @@
 
     ![图片](https://github.com/Jonas9172/Notes/assets/105164575/c0d7c837-8499-44f3-84d7-a7b17985bb55)
 
+56. 两种可变参数
     
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/532bced7-edcf-4e4d-bb9c-e27780b7f350)
+
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/a5a27b65-029b-41ea-ae82-87f3c3cb73cd)
+
+57. generator的生成，和yield的使用方法
+
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/ffd8cd64-a3aa-46a9-b24d-5ece644b9db8)
+
+58. 在函数中，局部变量存储在固定长度的数组中，而不是存储在字典中。这个数组可以通过索引直接访问，使得变量检索非常快。
+    全局变量存储在一个字典。当访问全局变量时，Python 必须执行哈希表查找，这涉及计算哈希值，然后检索与之关联的值虽然经过优化，但仍然比基于索引的查找慢。
+
+
+
 
