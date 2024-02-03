@@ -23,7 +23,7 @@
 11.
 <img width="238" alt="屏幕截图 2023-12-14 145531" src="https://github.com/Jonas9172/Notes/assets/105164575/2bb61786-4daf-4f3a-96da-b51f63ced905"> <img width="323" alt="屏幕截图 2023-12-14 145703" src="https://github.com/Jonas9172/Notes/assets/105164575/7570d930-c01d-43b2-896b-2910e82c6053">
 
-12. 字符串可以使用索引，例如 str[-1]； 字符串长度：len(str)； 字符串切片：str[:], str[0:3], str[3:-3], str[-3:]， str[首:尾:步长]； 取字符串中每一个字符---for each in str； 判断字符是否在字符串中---if each in str; 得到字符在字符串中第一次出现的索引位置---str2.find("str1"); 字符和字符串可以使用加法---each + str; 列表也可以使用切片操作，例如可以使用切片对string每个偶数位进行排序---string[::2] = sorted(string[::2])
+12. 字符串可以使用索引，例如 str[-1]； 字符串长度：len(str)； 字符串切片：str[:], str[0:3], str[3:-3], str[-3:]， str[首:尾:步长]； 取字符串中每一个字符---for each in str； 判断字符是否在字符串中---if each in str; 得到字符在字符串中第一次出现的索引位置---str2.find("str1"); 字符和字符串可以使用加法---each + str; 列表也可以使用切片操作，例如可以使用切片对string每个偶数位进行排序---string[::2] = sorted(string[::2])；range(4,-1,-1)指[4,3,2,1,0]
     <img width="369" alt="屏幕截图 2023-12-15 121645" src="https://github.com/Jonas9172/Notes/assets/105164575/e2b8834e-d61c-4d9a-9adb-9162a80489a9">
 
 14. 用ljust(8,"0")在字符串左侧对齐的情况下对右侧进行补位；rjust()反之
@@ -97,4 +97,16 @@
 49. math.sqrt(144) 和 144**0.5 --- 都是求144的平方根; pow(x,y)和math.pow(x,y)都是返回x的y次方,区别是pow()对于浮点数的计算可能不够精确。
 50. 最大公倍数等于两个数的乘积除以最大公约数
 51. max(list,key=len,default='') 返回list中最长的string
-52. 使用 append() 函数添加列表时，是添加列表的「引用地址」而不是添加列表内容，当被添加的列表发生变化时，添加后的列表也会同步发生变化。
+52. 使用 append() 函数添加列表时，是添加列表的「引用地址」而不是添加列表内容，当被添加的列表发生变化时，添加后的列表也会同步发生变化。    函数的参数使用的也是引用地址
+53. 堆的优点和局限性
+
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/9dd680bd-0b0e-4c6a-b2ff-1aca92509487)
+
+54. 栈的实现
+    
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/627b4664-f1dc-41d0-9853-8f7e6f18182d)
+
+55. 队列（queue）先进先出的特性对多线程安全有什么作用：
+
+    ![图片](https://github.com/Jonas9172/Notes/assets/105164575/c0d7c837-8499-44f3-84d7-a7b17985bb55)
+
